@@ -18,7 +18,7 @@
         android:textSize="38dp"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="401dp" />
+        tools:layout_editor_absoluteY="420dp" />
 
     <ImageView
         android:id="@+id/logo"
@@ -30,6 +30,6 @@
         app:srcCompat="@drawable/insomniaclogo"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="250dp" />
+        tools:layout_editor_absoluteY="297dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
