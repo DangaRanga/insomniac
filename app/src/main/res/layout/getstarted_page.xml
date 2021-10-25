@@ -69,8 +69,8 @@
         android:id="@+id/button"
         android:layout_width="169dp"
         android:layout_height="53dp"
-        android:backgroundTint="@color/primaryblue"
         android:text="Get Started"
+        android:textColor="@color/white"
         android:background="@drawable/button"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="591dp" />
