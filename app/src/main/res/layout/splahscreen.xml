@@ -15,10 +15,10 @@
         android:fontFamily="@font/poppins_medium"
         android:text="Insiomniac"
         android:textColor="@color/white"
-        android:textSize="38dp"
+        android:textSize="34dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="420dp" />
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="423dp" />
 
     <ImageView
         android:id="@+id/logo"
@@ -29,7 +29,7 @@
         android:scaleY="2.5"
         app:srcCompat="@drawable/insomniaclogo"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="157dp"
-        tools:layout_editor_absoluteY="297dp" />
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="267dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
