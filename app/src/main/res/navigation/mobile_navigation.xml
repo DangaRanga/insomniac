@@ -31,4 +31,8 @@
         android:name="com.example.insomniac.ui.dashboard.DashboardFragment2"
         android:label="fragment_dashboard2"
         tools:layout="@layout/fragment_dashboard2" />
+    <fragment
+        android:id="@+id/navigation_statistics"
+        android:name="com.example.insomniac.ui.statistics.StatisticsFragment"
+        android:label="StatisticsFragment" />
 </navigation>
