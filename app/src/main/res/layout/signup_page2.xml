@@ -12,10 +12,11 @@
         android:layout_height="218dp"
         app:srcCompat="@drawable/group_12"
         tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/message"
         android:layout_width="349dp"
         android:layout_height="73dp"
         android:fontFamily="@font/poppins_semibold"
@@ -87,7 +88,7 @@
             tools:layout_editor_absoluteY="88dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/feets"
             android:layout_width="67dp"
             android:layout_height="21dp"
             android:fontFamily="@font/poppins_medium"
@@ -98,7 +99,7 @@
             tools:layout_editor_absoluteY="17dp" />
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/height"
             android:layout_width="87dp"
             android:layout_height="24dp"
             android:fontFamily="@font/poppins_medium"
@@ -109,7 +110,7 @@
             tools:layout_editor_absoluteY="-4dp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/inches"
             android:layout_width="68dp"
             android:layout_height="19dp"
             android:fontFamily="@font/poppins_medium"
@@ -128,7 +129,7 @@
         tools:layout_editor_absoluteY="425dp">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView3"
             android:layout_width="36dp"
             android:layout_height="34dp"
             app:srcCompat="@drawable/person_black_24dp_2"
@@ -178,7 +179,7 @@
         tools:layout_editor_absoluteY="522dp">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView4"
             android:layout_width="36dp"
             android:layout_height="34dp"
             app:srcCompat="@drawable/event_black_24dp_1__1"
