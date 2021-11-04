@@ -15,11 +15,20 @@
         android:id="@+id/navigation_dashboard"
         android:name="com.example.insomniac.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_dashboardFragment2"
+            app:destination="@id/dashboardFragment2" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.insomniac.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/dashboardFragment2"
+        android:name="com.example.insomniac.ui.dashboard.DashboardFragment2"
+        android:label="fragment_dashboard2"
+        tools:layout="@layout/fragment_dashboard2" />
 </navigation>
