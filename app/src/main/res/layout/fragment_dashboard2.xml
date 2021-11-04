@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondaryblue"
-    tools:context=".ui.dashboard.DashboardFragment">
+    tools:context=".ui.dashboard.DashboardFragment2">
 
     <TextView
-        android:id="@+id/text_dashboard"
+        android:id="@+id/text_dashboard2"
         android:layout_width="258dp"
         android:layout_height="260dp"
         android:layout_marginStart="8dp"
@@ -16,10 +16,10 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/circle_dashboard_comp"
         android:gravity="center"
-        android:text="@string/dashboard_text"
+        android:text="@string/dashboard_text2"
         android:textAlignment="center"
         android:textColor="@android:color/white"
-        android:textSize="60sp"
+        android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -28,11 +28,11 @@
         app:layout_constraintVertical_bias="0.282" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/greeting_text"
         android:layout_width="144dp"
         android:layout_height="60dp"
         android:layout_marginTop="44dp"
-        android:text="@string/greetings"
+        android:text="@string/greetings2"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,60 +41,59 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/start_sleep"
+        android:id="@+id/stop_sleep"
         android:layout_width="169dp"
         android:layout_height="53dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/button"
-        android:text="@string/start_sleep"
+        android:text="@string/stop_sleep"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard2"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/time_label"
+        android:text="@string/time_label2"
         android:textColor="@color/graycolor"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.309"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.309" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/time_awake_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sleep_awake_text"
+        android:text="@string/sleep_awake_text2"
         android:textColor="@color/graycolor"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/start_sleep"
+        app:layout_constraintBottom_toTopOf="@+id/stop_sleep"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard2"
         app:layout_constraintVertical_bias="0.681"
         tools:ignore="TextContrastCheck" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/time_awake_id"
         android:layout_width="233dp"
         android:layout_height="39dp"
-        android:text="@string/hours_minutes_text"
+        android:text="@string/hours_minutes_text2"
         android:textColor="@android:color/white"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintBottom_toTopOf="@+id/time_awake_label"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/text_dashboard2"
         app:layout_constraintVertical_bias="0.985" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

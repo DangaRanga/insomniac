@@ -10,8 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.example.insomniac.R
 import com.example.insomniac.databinding.FragmentDashboardBinding
 
-class DashboardFragment : Fragment() {
 
+class DashboardFragment : Fragment() {
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
 
@@ -26,11 +26,11 @@ class DashboardFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         view.findViewById<Button>(R.id.start_sleep).setOnClickListener {
             findNavController().navigate(R.id.action_navigation_dashboard_to_dashboardFragment2)
         }
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
