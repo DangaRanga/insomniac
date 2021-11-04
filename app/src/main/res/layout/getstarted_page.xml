@@ -74,6 +74,8 @@
         android:layout_height="53dp"
         android:text="Get Started"
         android:textColor="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_semibold"
         android:background="@drawable/button"
         tools:layout_editor_absoluteX="121dp"
         tools:layout_editor_absoluteY="591dp"
