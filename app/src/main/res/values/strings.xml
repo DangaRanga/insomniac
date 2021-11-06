@@ -15,4 +15,9 @@
     <string name="sleep_awake_text2">Time Awake: | Time Asleep: </string>
     <string name="hours_minutes_text">4h 3m | 3h 2m</string>
     <string name="hours_minutes_text2">4h 3m | 3h 2m</string>
+    <string name="sleep_tips_page">Sleep Tips</string>
+    <string name="sleep_tips_desc">Quality sleep is the foundation for good health.It’s vital for your body to rebuild tissues, replenish cells and reclaim lost energy.</string>
+    <string name="for_you">For You!</string>
+    <string name="did_you">Did you know?</string>
+    <string name="read_more">Read More</string>
 </resources>
