@@ -4,10 +4,22 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="greetings">Hi Jantae!</string>
+    <string name="greetings2">Hi Jantae!</string>
     <string name="start_sleep">Start Sleeping</string>
-    <string name="Text">TextView</string>
-    <string name="Text2">"Hi! "</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="Dashboard2">Linked</string>
+    <string name="stop_sleep">Stop Sleeping</string>
+    <string name="dashboard_text">82%</string>
+    <string name="dashboard_text2">0.0</string>
+    <string name="time_label">SLEEP QUALITY</string>
+    <string name="time_label2">CURRENT TIME</string>
+    <string name="sleep_awake_text">Time Awake: | Time Asleep: </string>
+    <string name="sleep_awake_text2">Time Awake: | Time Asleep: </string>
+    <string name="hours_minutes_text">4h 3m | 3h 2m</string>
+    <string name="hours_minutes_text2">4h 3m | 3h 2m</string>
+    <string name="sleep_tips_page">Sleep Tips</string>
+    <string name="sleep_tips_desc">Quality sleep is the foundation for good health.It’s vital for your body to rebuild tissues, replenish cells and reclaim lost energy.</string>
+    <string name="for_you">For You!</string>
+    <string name="did_you">Did you know?</string>
+    <string name="read_more">Read More</string>
+    <string name="tip_title">Listening to white noise allows you to sleep better at night !</string>
+    <string name="tip_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
 </resources>
