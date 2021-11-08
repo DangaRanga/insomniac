@@ -13,8 +13,10 @@
     <string name="time_label2">CURRENT TIME</string>
     <string name="sleep_awake_text">Time Awake: | Time Asleep: </string>
     <string name="sleep_awake_text2">Time Awake: | Time Asleep: </string>
-    <string name="hours_minutes_text">4h 3m | 3h 2m</string>
-    <string name="hours_minutes_text2">4h 3m | 3h 2m</string>
+    <string name="time_awake">0</string>
+    <string name="time_aslp">0</string>
+    <string name="time_awake2">0</string>
+    <string name="time_aslp2">0</string>
     <string name="sleep_tips_page">Sleep Tips</string>
     <string name="sleep_tips_desc">Quality sleep is the foundation for good health.It’s vital for your body to rebuild tissues, replenish cells and reclaim lost energy.</string>
     <string name="for_you">For You!</string>
