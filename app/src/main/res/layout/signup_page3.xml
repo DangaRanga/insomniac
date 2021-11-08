@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/secondaryblue">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="388dp"
+        android:layout_height="218dp"
+        app:srcCompat="@drawable/group_12"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="349dp"
+        android:layout_height="73dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Before we can get started, tell us a bit about yourself! "
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="21dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="244dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="446dp"
+        android:layout_height="299dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="328dp">
+
+        <RadioButton
+            android:id="@+id/insomniaButton"
+            android:layout_width="393dp"
+            android:layout_height="62dp"
+            android:background="@drawable/radio_buttons"
+            android:buttonTint="@color/radioblue"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="onRadioButtonClicked"
+            android:padding="5dp"
+            android:text="  Insomnia"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <RadioButton
+            android:id="@+id/sleepApneaButton"
+            android:layout_width="393dp"
+            android:layout_height="62dp"
+            android:background="@drawable/radio_buttons"
+            android:buttonTint="@color/radioblue"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="onRadioButtonClicked"
+            android:padding="5dp"
+            android:text="  Sleep Apnea"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <RadioButton
+            android:id="@+id/narcolepsyButton"
+            android:layout_width="393dp"
+            android:layout_height="62dp"
+            android:background="@drawable/radio_buttons"
+            android:buttonTint="@color/radioblue"
+            android:fontFamily="@font/poppins_semibold"
+            android:onClick="onRadioButtonClicked"
+            android:padding="5dp"
+            android:text="  Narcolepsy"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="190dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="169dp"
+        android:layout_height="53dp"
+        android:background="@drawable/button"
+        android:text="Next Step"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins_semibold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="631dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
