@@ -8,17 +8,18 @@ import android.view.MotionEvent
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.insomniac.R
+import com.example.insomniac.ui.dashboard.DashboardStartActivity
 
 class SignupPage3Activity: AppCompatActivity() {
     @SuppressLint("ClickableViewAccessibility")
     private val startTouchListener = View.OnTouchListener { view, motionEvent ->
         when (motionEvent.action) {
             MotionEvent.ACTION_DOWN -> {
-                val intent = Intent(this, SignupPage3Activity::class.java).apply {}
+                val intent = Intent(this, DashboardStartActivity::class.java).apply {}
                 startActivity(intent);
             }
             MotionEvent.ACTION_UP -> {
-                val intent = Intent(this, SignupPage3Activity::class.java).apply {}
+                val intent = Intent(this, DashboardStartActivity::class.java).apply {}
                 startActivity(intent);
             }
         }

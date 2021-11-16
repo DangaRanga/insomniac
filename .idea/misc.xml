@@ -11,43 +11,40 @@
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/drawable/ic_launcher_background.xml" value="0.18385416666666668" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.18385416666666668" />
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/drawable/radio_buttons.xml" value="0.2203125" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/fragment_dashboard.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/fragment_dashboard2.xml" value="0.1" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/fragment_home.xml" value="0.15885416666666666" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/fragment_notifications.xml" value="0.16770833333333332" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/getstarted_page.xml" value="0.18" />
-        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/signup_page1.xml" value="0.1" />
-        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/signup_page2.xml" value="0.18" />
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/signup_page1.xml" value="0.22" />
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/signup_page2.xml" value="0.2" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/signup_page3.xml" value="0.18" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/splahscreen.xml" value="0.14" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/splash_screen.xml" value="0.1" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/appgradient.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/button.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/gsretangle.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/ic_launcher_background.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/activity_main.xml" value="0.11197916666666667" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/fragment_dashboard.xml" value="0.11197916666666667" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/fragment_home.xml" value="0.11197916666666667" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/fragment_notifications.xml" value="0.1838768115942029" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/getstarted_page.xml" value="0.1838768115942029" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/signup_page1.xml" value="0.1" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/signup_page2.xml" value="0.1" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/splahscreen.xml" value="0.1838768115942029" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/tips.xml" value="0.1838768115942029" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/layout/tips_expanded.xml" value="0.11041666666666666" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.128125" />
-        <entry key="..\:/Users/Rodje/AndroidStudioProjects/insomniac/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.128125" />
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/statistics_fragment.xml" value="0.1" />
         <entry key="..\:/Users/andrew/AndroidStudioProjects/Insomniac/app/src/main/res/layout/activity_main.xml" value="0.10144927536231885" />
         <entry key="..\:/Users/andrew/AndroidStudioProjects/Insomniac/app/src/main/res/layout/fragment_notifications.xml" value="0.10144927536231885" />
-        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/fragment_dashboard2.xml" value="0.28888888888888886" />
-        <entry key="app/src/main/res/layout/tips.xml" value="0.28888888888888886" />
-        <entry key="app/src/main/res/layout/tips_expanded.xml" value="0.28888888888888886" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/appgradient.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/button.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/button_dash.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/circle_dashboard.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/circle_dashboard_comp.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/gsretangle.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.3614583333333333" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.16793313069908813" />
+        <entry key="app/src/main/res/layout/dashboard2.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.15307971014492755" />
+        <entry key="app/src/main/res/layout/fragment_dashboard2.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/layout/fragment_dashboard_page.xml" value="0.19114583333333332" />
+        <entry key="app/src/main/res/layout/fragment_get__started.xml" value="0.3453125" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.3453125" />
+        <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.3453125" />
+        <entry key="app/src/main/res/layout/getstarted_page.xml" value="0.16793313069908813" />
+        <entry key="app/src/main/res/layout/splahscreen.xml" value="0.19114583333333332" />
       </map>
     </option>
   </component>

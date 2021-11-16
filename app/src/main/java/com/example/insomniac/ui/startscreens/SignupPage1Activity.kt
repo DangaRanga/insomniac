@@ -20,16 +20,16 @@ class SignupPage1Activity: AppCompatActivity() {
         when (motionEvent.action) {
             MotionEvent.ACTION_DOWN -> {
                 val intent = Intent(this, SignupPage2Activity::class.java).apply {}
-                intent.putExtra("usernme", this.username)
-                intent.putExtra("gender", this.gender)
-                intent.putExtra("age", this.age)
+//                intent.putExtra("usernme", this.username)
+//                intent.putExtra("gender", this.gender)
+//                intent.putExtra("age", this.age)
                 startActivity(intent);
             }
             MotionEvent.ACTION_UP -> {
                 val intent = Intent(this, SignupPage2Activity::class.java).apply {}
-                intent.putExtra("usernme", this.username)
-                intent.putExtra("gender", this.gender)
-                intent.putExtra("age", this.age)
+//                intent.putExtra("usernme", this.username)
+//                intent.putExtra("gender", this.gender)
+//                intent.putExtra("age", this.age)
                 startActivity(intent);
             }
         }
@@ -39,7 +39,7 @@ class SignupPage1Activity: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.signup_page1)
-        setupScreen()
+//        setupScreen()
         findViewById<Button>(R.id.nextStep1).setOnTouchListener(startTouchListener)
     }
 
