@@ -12,4 +12,6 @@
     <color name="centerblue">#355e7d</color>
     <color name="radioblue">#29355F</color>
     <color name="graycolor">#919191</color>
+    <color name="main_article_blue">#151D33</color>
+    <color name="sub_article_blue">#1E2746</color>
 </resources>
