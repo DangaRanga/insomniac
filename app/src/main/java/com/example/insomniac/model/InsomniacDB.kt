@@ -55,7 +55,7 @@ public abstract class InsomniacDB: RoomDatabase() {
 
             val users = arrayListOf<User>()
             users.add(User(0,"John Doe", "Male", 21, 5, 11,
-                160, true, false, false ))
+                160, "Active",true, false, false ))
 
             for(user in users) {
                 userDao.insertUser(user)

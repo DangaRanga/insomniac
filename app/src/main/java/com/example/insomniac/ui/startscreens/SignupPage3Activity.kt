@@ -9,6 +9,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.insomniac.R
 import com.example.insomniac.ui.dashboard.DashboardStartActivity
+import com.example.insomniac.model.UserViewModel
+import com.example.insomniac.model.user.User
 
 class SignupPage3Activity: AppCompatActivity() {
     var username: String = "";
@@ -24,14 +26,24 @@ class SignupPage3Activity: AppCompatActivity() {
     var sleepApnea: Boolean = false;
     var narcolepsy: Boolean = false;
 
+    lateinit var user:User
+    lateinit var userviewmodel: UserViewModel
+
+
     @SuppressLint("ClickableViewAccessibility")
     private val startTouchListener = View.OnTouchListener { view, motionEvent ->
         when (motionEvent.action) {
             MotionEvent.ACTION_DOWN -> {
+                user = User(0, this.username, this.gender, this.age, this.feet, this.inches, this.weight,
+                                        this.fitness, this.insomnia, this.sleepApnea, this.narcolepsy)
+                userviewmodel.insert(user);
                 val intent = Intent(this, DashboardStartActivity::class.java).apply {}
                 startActivity(intent);
             }
             MotionEvent.ACTION_UP -> {
+                user = User(0, this.username, this.gender, this.age, this.feet, this.inches, this.weight,
+                    this.fitness, this.insomnia, this.sleepApnea, this.narcolepsy)
+                userviewmodel.insert(user);
                 val intent = Intent(this, DashboardStartActivity::class.java).apply {}
                 startActivity(intent);
             }
