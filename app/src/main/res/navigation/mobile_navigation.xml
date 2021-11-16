@@ -30,7 +30,11 @@
         android:id="@+id/dashboardFragment2"
         android:name="com.example.insomniac.ui.dashboard.DashboardFragment2"
         android:label="fragment_dashboard2"
-        tools:layout="@layout/fragment_dashboard2" />
+        tools:layout="@layout/fragment_dashboard2" >
+        <action
+            android:id="@+id/action_dashboardFragment2_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
     <fragment
         android:id="@+id/navigation_statistics"
         android:name="com.example.insomniac.ui.statistics.StatisticsFragment"
