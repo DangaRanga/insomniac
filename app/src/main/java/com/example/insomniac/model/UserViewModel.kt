@@ -33,7 +33,7 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
         return repo.getUser(uid)
     }
 
-    fun getAllUsers(): LiveData<List<User>> {
+    fun getAllUsers(): List<User> {
         return repo.getAllUsers()
     }
 }

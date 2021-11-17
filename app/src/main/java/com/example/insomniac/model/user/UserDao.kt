@@ -16,7 +16,7 @@ interface UserDao {
     fun getUser(uid:Int): User
 
     @Query("SELECT * FROM user")
-    fun getAllUsers(): LiveData<List<User>>
+    fun getAllUsers(): List<User>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertUser(user: User)
