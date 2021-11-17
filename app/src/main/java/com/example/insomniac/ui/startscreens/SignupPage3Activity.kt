@@ -14,6 +14,9 @@ import com.example.insomniac.ui.dashboard.DashboardStartActivity
 import com.example.insomniac.model.UserViewModel
 import com.example.insomniac.model.user.User
 
+
+
+
 class SignupPage3Activity: AppCompatActivity() {
     var username: String = "";
     var gender: String = "";
@@ -72,29 +75,40 @@ class SignupPage3Activity: AppCompatActivity() {
         val tempInsomnia: RadioButton = findViewById<RadioButton>(R.id.insomniaButton);
         var tempSleepApnea: RadioButton = findViewById<RadioButton>(R.id.sleepApneaButton);
         var tempNarcolepsy: RadioButton = findViewById<RadioButton>(R.id.narcolepsyButton);
+
+        var isToggledRadio1 = false
+        var isToggledRadio2 = false
+        var isToggledRadio3 = false
+
         tempInsomnia.setOnClickListener(View.OnClickListener { v ->
-            val checked = (v as RadioButton).isChecked
-            if (checked) {
+            isToggledRadio1 = !isToggledRadio1 //Switch boolean value
+            val checked = (v as RadioButton)
+            if (checked.isChecked) {
                 this.insomnia = true;
             } else {
                 this.insomnia = false;
             }
+            checked.isChecked = isToggledRadio1
         })
         tempSleepApnea.setOnClickListener(View.OnClickListener { v ->
-            val checked = (v as RadioButton).isChecked
-            if (checked) {
+            isToggledRadio2 = !isToggledRadio2 //Switch boolean value
+            val checked = (v as RadioButton)
+            if (checked.isChecked) {
                 this.sleepApnea = true;
             } else {
                 this.sleepApnea = false;
             }
+            checked.isChecked = isToggledRadio2
         })
         tempNarcolepsy.setOnClickListener(View.OnClickListener { v ->
-            val checked = (v as RadioButton).isChecked
-            if (checked) {
+            isToggledRadio3 = !isToggledRadio3 //Switch boolean value
+            val checked = (v as RadioButton)
+            if (checked.isChecked) {
                 this.narcolepsy = true;
             } else {
                 this.narcolepsy = false;
             }
+            checked.isChecked = isToggledRadio3
         })
 
     }
