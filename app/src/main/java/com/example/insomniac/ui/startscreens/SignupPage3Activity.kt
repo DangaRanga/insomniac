@@ -9,8 +9,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import com.example.insomniac.R
 import com.example.insomniac.ui.dashboard.DashboardStartActivity
-import com.example.insomniac.model.UserViewModel
-import com.example.insomniac.model.user.User
+//import com.example.insomniac.model.UserViewModel
+//import com.example.insomniac.model.user.User
 
 class SignupPage3Activity: AppCompatActivity() {
     var username: String = "";
