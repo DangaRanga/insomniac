@@ -59,6 +59,7 @@
             android:text="  Insomnia"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
+            android:checked="false"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,6 +80,7 @@
             android:text="  Sleep Apnea"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
+            android:checked="false"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -99,6 +101,7 @@
             android:text="  Narcolepsy"
             android:textColor="#FFFFFF"
             android:textSize="25dp"
+            android:checked="false"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
