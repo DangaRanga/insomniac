@@ -11,7 +11,7 @@ interface StatsAwakeDao {
 
     //Rmbr to select last record
     @Query("SELECT * FROM awake ")
-    fun getLastStats(): LiveData<List<StatsAwake>>
+    fun getLastStats(): List<StatsAwake>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertAwake(statsAwake: StatsAwake)

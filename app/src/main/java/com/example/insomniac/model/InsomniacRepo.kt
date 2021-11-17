@@ -24,7 +24,7 @@ class InsomniacRepo (private val userDao: UserDao,private val  statsAwakeDao: St
         statsAwakeDao.insertAwake(statsAwake)
     }
 
-    fun getLastStatsSleep():LiveData<List<StatsSleep>>{
+    fun getLastStatsSleep():List<StatsSleep>{
         return statsSleepDao.getLastSleep()
     }
 
@@ -35,7 +35,7 @@ class InsomniacRepo (private val userDao: UserDao,private val  statsAwakeDao: St
     fun getAllUsers(): List<User> {
         return userDao.getAllUsers()
     }
-    fun getLastStatsAwake():LiveData<List<StatsAwake>>{
+    fun getLastStatsAwake():List<StatsAwake>{
         return statsAwakeDao.getLastStats()
     }
 
