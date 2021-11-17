@@ -41,7 +41,7 @@ class SignupPage3Activity: AppCompatActivity() {
                 startActivity(intent);
             }
             MotionEvent.ACTION_UP -> {
-//                user = User(1, this.username, this.gender, this.age, this.feet, this.inches, this.weight,
+              //                user = User(1, this.username, this.gender, this.age, this.feet, this.inches, this.weight,
 //                    this.fitness, this.insomnia, this.sleepApnea, this.narcolepsy)
 //                userviewmodel.insert(user);
                 val intent = Intent(this, DashboardStartActivity::class.java).apply {}
@@ -54,13 +54,13 @@ class SignupPage3Activity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.signup_page3)
 
-        this.username = intent.getStringExtra("USERNAME").toString()
-        this.gender = intent.getStringExtra("GENDER").toString()
-        this.age = intent.getIntExtra("AGE", 0);
-        this.feet = intent.getIntExtra("FEET", 0);
-        this.inches = intent.getIntExtra("INCHES", 0);
-        this.weight = intent.getIntExtra("WEIGHT", 0);
-        this.fitness = intent.getStringExtra("FITNESS").toString()
+//        this.username = intent.getStringExtra("USERNAME").toString()
+//        this.gender = intent.getStringExtra("GENDER").toString()
+//        this.age = intent.getIntExtra("AGE", 0);
+//        this.feet = intent.getIntExtra("FEET", 0);
+//        this.inches = intent.getIntExtra("INCHES", 0);
+//        this.weight = intent.getIntExtra("WEIGHT", 0);
+//        this.fitness = intent.getStringExtra("FITNESS").toString()
 
         findViewById<Button>(R.id.nextStep3).setOnTouchListener(startTouchListener)
     }
