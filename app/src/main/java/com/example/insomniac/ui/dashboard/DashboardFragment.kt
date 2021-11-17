@@ -29,9 +29,8 @@ class DashboardFragment : Fragment() {
 //    private var run = true
     lateinit var awake: StatsAwake
     lateinit var userviewmodel: UserViewModel;
-
     lateinit var user: List<User>
-    lateinit var sleep: List<StatsSleep>
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -53,16 +52,25 @@ class DashboardFragment : Fragment() {
         val tempUsername: TextView = view.findViewById(R.id.greetUser)
         tempUsername.setText("Hi " + name + "!")
 
+        lateinit var sleep: List<StatsSleep>
+        lateinit var awake2: List<StatsAwake>
 //        val time_awake = userviewmodel.getLastStatsAwake()
         sleep= userviewmodel.getLastStatsSleep()
-        if (sleep.size ==0){
-            //TODO
-        }else{
-            val aslp: StatsSleep=sleep.get(sleep.size-1)
-            val aslp_val:String = aslp.CurrentStopTime
-            val aslptest: TextView = view.findViewById(R.id.Time_Slp)
-            aslptest.setText(""+ aslp_val+"")
-        }
+        awake2= userviewmodel.getLastStatsAwake()
+//        if (sleep.size ==0 || awake2.size==0){
+//            //TODO
+//        }else{
+//            val aslp: StatsSleep=sleep.get(sleep.size-1)
+//            val aslp_val:String = aslp.CurrentStopTime
+//            val aslptest: TextView = view.findViewById(R.id.Time_Slp)
+////            aslptest.setText(""+ aslp_val+"")
+//
+//            val awake_: StatsAwake=awake2.get(sleep.size-1)
+//            val awake_val:String = awake_.CurrentStartTime
+//            val starttest: TextView = view.findViewById(R.id.Time_Slp)
+////            Log.i("Testing",aslp_val)
+////            starttest.setText(""+ awake_val+"")
+//        }
 
 //        val stopstime: String = aslp.CurrentStopTime
 
