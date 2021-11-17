@@ -9,11 +9,14 @@ import androidx.room.OnConflictStrategy
 @Dao
 interface UserDao {
 
+//    @Query("SELECT * FROM user ORDER BY id LIMIT 1")
+//    fun  checkTable()
+
     @Query("SELECT * FROM user WHERE id = :uid")
     fun getUser(uid:Int): User
 
     @Query("SELECT * FROM user")
-    fun getAllUsers(): LiveData<List<User>>
+    fun getAllUsers(): List<User>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertUser(user: User)

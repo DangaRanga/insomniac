@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/secondaryblue">
+    android:background="@color/secondaryblue"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait">
 
     <ImageView
         android:id="@+id/imageView"
@@ -195,7 +197,7 @@
             android:ems="30"
             android:fontFamily="@font/poppins_medium"
             android:inputType="number"
-            android:hint="Weight"
+            android:hint="0"
             android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
@@ -207,12 +209,12 @@
             app:layout_constraintVertical_bias="0.888" />
 
         <View
-            android:layout_width="360dp"
+            android:layout_width="350dp"
             android:layout_height="1dp"
             android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintHorizontal_bias="0.737"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.956" />
@@ -258,11 +260,11 @@
             app:layout_constraintVertical_bias="0.733"
             app:srcCompat="@drawable/event_black_24dp_1__1" />
 
-        <EditText
+        <Spinner
             android:id="@+id/editFitness"
             android:layout_width="286dp"
             android:layout_height="51dp"
-            android:backgroundTint="@color/secondaryblue"
+            android:backgroundTint="@color/white"
             android:ems="30"
             android:fontFamily="@font/poppins_medium"
             android:inputType="text"
@@ -278,27 +280,15 @@
             app:layout_constraintVertical_bias="0.86" />
 
         <View
-            android:layout_width="360dp"
+            android:layout_width="350dp"
             android:layout_height="1dp"
             android:background="@android:color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintHorizontal_bias="0.737"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.936" />
-
-        <ImageView
-            android:id="@+id/genderDropDown"
-            android:layout_width="36dp"
-            android:layout_height="34dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.909"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.737"
-            app:srcCompat="@drawable/arrow_drop_down_black_24dp_1" />
+            app:layout_constraintVertical_bias="0.946" />
 
         <TextView
             android:id="@+id/textView9"

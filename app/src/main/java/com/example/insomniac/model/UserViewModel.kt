@@ -35,7 +35,10 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
     fun getUser(uid: Int): User {
         return repo.getUser(uid)
     }
-
+    fun getAllUsers(): List<User> {
+        return repo.getAllUsers()
+    }
+    
     fun insertAwake(statsAwake: StatsAwake) = viewModelScope.launch(Dispatchers.IO){
         repo.insertStatsAwake(statsAwake)
     }
@@ -50,5 +53,6 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
 
     fun getLastStatsSleep():LiveData<List<StatsSleep>> {
         return repo.getLastStatsSleep()
+
     }
 }
