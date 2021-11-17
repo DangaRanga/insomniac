@@ -15,7 +15,7 @@
         android:layout_width="215dp"
         android:layout_height="74dp"
         android:fontFamily="@font/poppins_medium"
-        android:text="Insiomniac"
+        android:text="Insomniac"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
