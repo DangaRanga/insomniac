@@ -5,31 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appgradient"
-    android:visibility="visible">
-
+    android:visibility="visible"
+    android:id="@+id/splashScreen">
 
     <TextView
         android:id="@+id/appName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="215dp"
+        android:layout_height="74dp"
         android:fontFamily="@font/poppins_medium"
         android:text="Insiomniac"
         android:textColor="@color/white"
-        android:textSize="34dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="423dp" />
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.631" />
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="96dp"
-        android:layout_height="77dp"
+        android:layout_width="133dp"
+        android:layout_height="90dp"
         android:scaleType="centerInside"
         android:scaleX="2.5"
         android:scaleY="2.5"
-        app:srcCompat="@drawable/insomniaclogo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="267dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.393"
+        app:srcCompat="@drawable/insomniaclogo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,9 +14,11 @@
         android:layout_height="481dp"
         android:background="@drawable/appgradient"
         android:src="@drawable/gsretangle"
-        tools:layout_editor_absoluteX="-9dp"
-        tools:layout_editor_absoluteY="-28dp"
-        tools:ignore="MissingConstraints"></ImageView>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ImageView>
 
     <TextView
         android:id="@+id/appName"
@@ -26,9 +28,12 @@
         android:text="Insiomniac"
         android:textColor="@color/white"
         android:textSize="40dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="94dp"
-        tools:layout_editor_absoluteY="67dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.077"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/logo"
@@ -37,10 +42,14 @@
         android:scaleType="centerInside"
         android:scaleX="2.5"
         android:scaleY="2.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.309"
         app:srcCompat="@drawable/insomniaclogo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="144dp"
-        tools:layout_editor_absoluteY="206dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
@@ -52,9 +61,11 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="21dp"
-        tools:layout_editor_absoluteX="29dp"
-        tools:layout_editor_absoluteY="418dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
 
     <TextView
         android:id="@+id/textView2"
@@ -63,23 +74,30 @@
         android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sleep better with Insomniac!"
         android:textAlignment="center"
         android:textColor="#C2C2C2"
+        android:fontFamily="@font/poppins_medium"
         android:textSize="14dp"
-        tools:layout_editor_absoluteX="46dp"
-        tools:layout_editor_absoluteY="505dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.693"
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/getStartedBtn"
         android:layout_width="169dp"
         android:layout_height="53dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Get Started"
         android:textColor="@color/white"
         android:textSize="16dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:background="@drawable/button"
-        tools:layout_editor_absoluteX="121dp"
-        tools:layout_editor_absoluteY="591dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.83" />
 
     <TextView
         android:id="@+id/textView3"
@@ -89,8 +107,12 @@
         android:textAlignment="center"
         android:textColor="#C2C2C2"
         android:textSize="14dp"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="652dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.902"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

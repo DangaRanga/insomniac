@@ -8,35 +8,48 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="388dp"
-        android:layout_height="218dp"
-        app:srcCompat="@drawable/group_12"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="411dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/group_12" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="349dp"
         android:layout_height="73dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Before we can get started, tell us a bit about yourself! "
+        android:text="Last step, tell us about your sleeping disorders! "
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="21dp"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="244dp" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="249dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.37"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="446dp"
-        android:layout_height="299dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="328dp">
+        android:layout_width="410dp"
+        android:layout_height="296dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.77"
+        tools:ignore="MissingConstraints">
 
         <RadioButton
             android:id="@+id/insomniaButton"
-            android:layout_width="393dp"
+            android:layout_width="352dp"
             android:layout_height="62dp"
             android:background="@drawable/radio_buttons"
             android:buttonTint="@color/radioblue"
@@ -47,13 +60,17 @@
             android:textColor="#FFFFFF"
             android:textSize="25dp"
 
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="16dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.413"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
 
         <RadioButton
             android:id="@+id/sleepApneaButton"
-            android:layout_width="393dp"
-            android:layout_height="62dp"
+            android:layout_width="356dp"
+            android:layout_height="59dp"
             android:background="@drawable/radio_buttons"
             android:buttonTint="@color/radioblue"
             android:fontFamily="@font/poppins_semibold"
@@ -63,13 +80,17 @@
             android:textColor="#FFFFFF"
             android:textSize="25dp"
 
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="102dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.447" />
 
         <RadioButton
             android:id="@+id/narcolepsyButton"
-            android:layout_width="393dp"
-            android:layout_height="62dp"
+            android:layout_width="356dp"
+            android:layout_height="60dp"
             android:background="@drawable/radio_buttons"
             android:buttonTint="@color/radioblue"
             android:fontFamily="@font/poppins_semibold"
@@ -79,22 +100,29 @@
             android:textColor="#FFFFFF"
             android:textSize="25dp"
 
-            tools:layout_editor_absoluteX="27dp"
-            tools:layout_editor_absoluteY="190dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.817" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextStep3"
         android:layout_width="169dp"
         android:layout_height="53dp"
         android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Next Step"
         android:textColor="@color/white"
         android:textSize="16dp"
-        android:fontFamily="@font/poppins_semibold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="631dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.938" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

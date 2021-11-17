@@ -8,40 +8,56 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="388dp"
+        android:layout_width="410dp"
         android:layout_height="218dp"
-        app:srcCompat="@drawable/group_12"
-        tools:layout_editor_absoluteX="38dp"
-        tools:layout_editor_absoluteY="16dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/group_12" />
 
     <TextView
         android:id="@+id/message"
         android:layout_width="349dp"
         android:layout_height="73dp"
         android:fontFamily="@font/poppins_semibold"
-        android:text="Before we can get started, tell us a bit about yourself! "
+        android:text="Almost there, tell us a bit more about yourself! "
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="21dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.741"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.352" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="94dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-16dp"
-        tools:layout_editor_absoluteY="328dp">
+        android:id="@+id/constraintLayout"
+        android:layout_width="407dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="36dp"
             android:layout_height="34dp"
-            app:srcCompat="@drawable/person_black_24dp_2"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="38dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.144"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7"
+            app:srcCompat="@drawable/person_black_24dp_2" />
 
         <EditText
             android:id="@+id/editFeet"
@@ -50,13 +66,17 @@
             android:backgroundTint="@color/secondaryblue"
             android:ems="30"
             android:fontFamily="@font/poppins_medium"
-            android:inputType="textPersonName"
-            android:text="0"
+            android:inputType="number"
+            android:hint="0"
+            android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="37dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.281"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.659" />
 
         <EditText
             android:id="@+id/editInches"
@@ -65,27 +85,39 @@
             android:backgroundTint="@color/secondaryblue"
             android:ems="30"
             android:fontFamily="@font/poppins_medium"
-            android:inputType="textPersonName"
-            android:text="0"
+            android:inputType="number"
+            android:hint="0"
+            android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="37dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.811"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.704" />
 
         <View
             android:layout_width="140dp"
             android:layout_height="1dp"
             android:background="@android:color/white"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="87dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.198"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.85" />
 
         <View
             android:layout_width="120dp"
             android:layout_height="1dp"
             android:background="@android:color/white"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="88dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.87" />
 
         <TextView
             android:id="@+id/feets"
@@ -95,8 +127,12 @@
             android:text="Feet"
             android:textColor="#FFFFFF"
             android:textSize="13dp"
-            tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="17dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.287" />
 
         <TextView
             android:id="@+id/height"
@@ -106,8 +142,12 @@
             android:text="Height"
             android:textColor="#FFFFFF"
             android:textSize="15dp"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="-4dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.165"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.011" />
 
         <TextView
             android:id="@+id/inches"
@@ -117,24 +157,35 @@
             android:text="Inches"
             android:textColor="#FFFFFF"
             android:textSize="13dp"
-            tools:layout_editor_absoluteX="245dp"
-            tools:layout_editor_absoluteY="17dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.28" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="94dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="425dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.654">
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="36dp"
             android:layout_height="34dp"
-            app:srcCompat="@drawable/person_black_24dp_2"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="44dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.128"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733"
+            app:srcCompat="@drawable/person_black_24dp_2" />
 
         <EditText
             android:id="@+id/editWeight"
@@ -143,20 +194,28 @@
             android:backgroundTint="@color/secondaryblue"
             android:ems="30"
             android:fontFamily="@font/poppins_medium"
-            android:inputType="textPersonName"
-            android:text="Weight"
+            android:inputType="number"
+            android:hint="Weight"
+            android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="91dp"
-            tools:layout_editor_absoluteY="33dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.747"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.888" />
 
         <View
             android:layout_width="360dp"
             android:layout_height="1dp"
             android:background="@android:color/white"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="88dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.941"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.956" />
 
         <TextView
             android:id="@+id/textView7"
@@ -166,25 +225,38 @@
             android:text="Weight"
             android:textColor="#FFFFFF"
             android:textSize="15dp"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="9dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.228" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
         android:layout_width="match_parent"
-        android:layout_height="94dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="522dp">
+        android:layout_height="95dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.814"
+        tools:ignore="MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="36dp"
             android:layout_height="34dp"
-            app:srcCompat="@drawable/event_black_24dp_1__1"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="44dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.114"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.733"
+            app:srcCompat="@drawable/event_black_24dp_1__1" />
 
         <EditText
             android:id="@+id/editFitness"
@@ -193,28 +265,40 @@
             android:backgroundTint="@color/secondaryblue"
             android:ems="30"
             android:fontFamily="@font/poppins_medium"
-            android:inputType="textPersonName"
-            android:text="Active"
+            android:inputType="text"
+            android:hint="Active"
+            android:textColorHint="#FFFFFF"
             android:textColor="#FFFFFF"
             android:textSize="20dp"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="90dp"
-            tools:layout_editor_absoluteY="30dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.632"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.86" />
 
         <View
             android:layout_width="360dp"
             android:layout_height="1dp"
             android:background="@android:color/white"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="88dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.843"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.936" />
 
         <ImageView
             android:id="@+id/genderDropDown"
             android:layout_width="36dp"
             android:layout_height="34dp"
-            app:srcCompat="@drawable/arrow_drop_down_black_24dp_1"
-            tools:layout_editor_absoluteX="340dp"
-            tools:layout_editor_absoluteY="30dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.909"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.737"
+            app:srcCompat="@drawable/arrow_drop_down_black_24dp_1" />
 
         <TextView
             android:id="@+id/textView9"
@@ -224,21 +308,27 @@
             android:text="Fitness Level"
             android:textColor="#FFFFFF"
             android:textSize="15dp"
-            tools:layout_editor_absoluteX="36dp"
-            tools:layout_editor_absoluteY="8dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.155"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.068" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/nextStep2"
         android:layout_width="169dp"
         android:layout_height="53dp"
         android:background="@drawable/button"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Next Step"
         android:textColor="@color/white"
         android:textSize="16dp"
-        android:fontFamily="@font/poppins_semibold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="631dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.936" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
