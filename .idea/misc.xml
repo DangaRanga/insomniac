@@ -22,7 +22,11 @@
         <entry key="app/src/main/res/drawable/ic_baseline_pause_24.xml" value="0.3614583333333333" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/fragment_dashboard2.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/fragment_tips.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/statistics_fragment.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/layout/tester.xml" value="0.18795289855072464" />
+        <entry key="app/src/main/res/layout/tips.xml" value="0.19322916666666667" />
+        <entry key="app/src/main/res/layout/tips_expanded.xml" value="0.19322916666666667" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.3453125" />
       </map>
     </option>

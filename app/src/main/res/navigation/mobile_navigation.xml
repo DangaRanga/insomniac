@@ -39,4 +39,10 @@
         android:id="@+id/navigation_statistics"
         android:name="com.example.insomniac.ui.statistics.StatisticsFragment"
         android:label="StatisticsFragment" />
+
+    <fragment
+        android:id="@+id/tipsFragment"
+        android:name="com.example.insomniac.ui.tips.TipsFragment"
+        android:label="TipsFragment" />
+
 </navigation>
