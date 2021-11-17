@@ -74,7 +74,7 @@
         android:layout_height="wrap_content"
         android:text="@string/sleep_awake_text"
         android:textColor="@color/graycolor"
-        android:textSize="14sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/start_sleep"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -82,20 +82,6 @@
         app:layout_constraintTop_toBottomOf="@+id/text_dashboard"
         app:layout_constraintVertical_bias="0.681"
         tools:ignore="TextContrastCheck" />
-
-    <TextView
-        android:id="@+id/Time_Awake"
-        android:layout_width="91dp"
-        android:layout_height="39dp"
-        android:layout_marginBottom="2dp"
-        android:text="@string/time_awake"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView8"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Time_Slp"
@@ -108,7 +94,7 @@
         android:textSize="28sp"
         app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.637"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

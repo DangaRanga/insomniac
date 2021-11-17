@@ -6,6 +6,8 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
 import androidx.lifecycle.viewModelScope
+import com.example.insomniac.model.stats.StatsAwake
+import com.example.insomniac.model.stats.StatsSleep
 import com.example.insomniac.model.user.User
 import com.example.insomniac.model.user.UserDao
 import kotlinx.coroutines.Dispatchers
@@ -17,10 +19,14 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
     private val user: User
 
     init{
+
         val db = InsomniacDB.getDatabase(application, viewModelScope)
         val userDao = db.userDao()
+        val statsAwakeDao=db.statsAwakeDao()
+        val statsSleepDao=db.statsSleepDao()
 
-        repo = InsomniacRepo(userDao)
+
+        repo = InsomniacRepo(userDao,statsAwakeDao, statsSleepDao)
         user = repo.getUser(0)
 
     }
@@ -31,5 +37,21 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
 
     fun getUser(uid: Int): User {
         return repo.getUser(uid)
+    }
+
+    fun insertAwake(statsAwake: StatsAwake) = viewModelScope.launch(Dispatchers.IO){
+        repo.insertStatsAwake(statsAwake)
+    }
+
+    fun getLastStatsAwake():LiveData<List<StatsAwake>> {
+        return repo.getLastStatsAwake()
+    }
+
+    fun insertStatsSleep(statsSleep: StatsSleep) = viewModelScope.launch(Dispatchers.IO){
+        repo.insertStatsSleep(statsSleep)
+    }
+
+    fun getLastStatsSleep():LiveData<List<StatsSleep>> {
+        return repo.getLastStatsSleep()
     }
 }
