@@ -7,6 +7,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.EditText
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.insomniac.R
@@ -14,6 +16,7 @@ import com.example.insomniac.databinding.FragmentDashboardBinding
 import com.example.insomniac.model.UserViewModel
 import com.example.insomniac.model.stats.StatsAwake
 import java.text.SimpleDateFormat
+import com.example.insomniac.model.user.User
 import androidx.lifecycle.ViewModelProvider
 
 
@@ -27,6 +30,8 @@ class DashboardFragment : Fragment() {
     lateinit var awake: StatsAwake
     lateinit var userviewmodel: UserViewModel;
 
+    lateinit var user: List<User>
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -39,6 +44,13 @@ class DashboardFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //        StartAwake(view)
+
+        userviewmodel = UserViewModel(requireActivity().application)
+        user = userviewmodel.getAllUsers()
+        val myuser: User = user.get(0)
+        val name: String = myuser.name
+        val tempUsername: TextView = view.findViewById(R.id.greetUser)
+        tempUsername.setText("Hi " + name + "!")
 
         val sdf = SimpleDateFormat("dd/M/yyyy")
         val sdf2 = SimpleDateFormat(" hh:mm:ss a")
