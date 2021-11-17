@@ -71,7 +71,7 @@ class DashboardFragment2 : Fragment() {
                     var seconds2=(seconds%60)
                     Log.i("test",hours.toString()+" "+minutes.toString()+" "+seconds.toString()+" "+seconds2.toString())
                     val showCount=view.findViewById<TextView>(R.id.Time_Slp2)
-                    showCount.text=(hours.toString()+"h "+minutes.toString()+"m").toString()
+                    showCount.text=(hours.toString()+":"+minutes.toString()+":"+seconds2.toString())
                 }
             } catch (e: Exception) {
             }
