@@ -38,7 +38,21 @@ class StatisticsFragment : Fragment() {
         currentDateTime(view)
     }
 
+    /**
+     * Calculates sleep efficiency
+     * Reference for formula used: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4751425/
+     */
     private fun calculatePercentages(view: View){
+        // TODO Retrieve these values using the ViewModel to pull from the Room DB
+        // These are currently placeholders so the equation could be written
+        var totalSleepTime = 0
+        var totalRecordingTime = 0
+
+        val sleepEfficiency = (totalSleepTime/totalRecordingTime) * 100
+        val deepSleepTime = (totalSleepTime * 0.23)
+
+        val deepSleepView = view.findViewById<TextView>(R.id.statistics_total_sleep_time)
+        deepSleepView.text = ("Deep Sleep Time $deepSleepTime")
     }
     private fun currentDateTime(view: View){
         // Initializing key variables
