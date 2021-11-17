@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/rectimage"
-        android:layout_width="433dp"
-        android:layout_height="481dp"
+        android:layout_width="413dp"
+        android:layout_height="466dp"
         android:background="@drawable/appgradient"
         android:src="@drawable/gsretangle"
         app:layout_constraintBottom_toBottomOf="parent"

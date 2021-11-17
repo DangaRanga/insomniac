@@ -30,36 +30,39 @@ public abstract class InsomniacDB: RoomDatabase() {
                 val instance = Room.databaseBuilder(
                     context.applicationContext,
                     InsomniacDB::class.java,
-                    "student_database"
-                ).addCallback(InsomniacDBCallback(scope)).fallbackToDestructiveMigration().build()
+                    "Insomniac_DB"
+                ).addCallback(InsomniacDBCallback(scope)).fallbackToDestructiveMigration().allowMainThreadQueries().build()
                 INSTANCE = instance
                 return instance
             }
         }
     }
 
+//    .addCallback(InsomniacDBCallback(scope))
     private class InsomniacDBCallback(
         private val scope: CoroutineScope
     ) : RoomDatabase.Callback() {
 
-        override fun onOpen(db: SupportSQLiteDatabase) {
-            super.onOpen(db)
+        override fun onCreate(db: SupportSQLiteDatabase) {
+            super.onCreate(db)
             INSTANCE?.let { database ->
                 scope.launch {
                     populateDatabase(database.userDao())
                 }
             }
         }
-        suspend fun populateDatabase(userDao: UserDao) {
-            userDao.deleteUser()
 
-            val users = arrayListOf<User>()
-            users.add(User(0,"John Doe", "Male", 21, 5, 11,
-                160, "Active",true, false, false ))
-
-            for(user in users) {
-                userDao.insertUser(user)
+        override fun onOpen(db: SupportSQLiteDatabase) {
+            super.onOpen(db)
+            INSTANCE?.let { database ->
+                scope.launch { }
             }
+        }
+        suspend fun populateDatabase(userDao: UserDao) {
+//            userDao.deleteAll()
+//
+//            var user = User(0,"John Doe", "Male", 21, 5, 11, 160, "Active",true, false, false )
+//            userDao.insertUser(user)
         }
     }
 }
