@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/drawable/ic_launcher_InsomniaAppBackground.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/fragment_dashboard2.xml" value="0.2" />
         <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/layout/splahscreen.xml" value="0.17391304347826086" />
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/mipmap-anydpi-v26/ic_launcher_InsomniaApp.xml" value="0.1" />
+        <entry key="..\:/Users/Jantae Leckie/Desktop/Computing/3rd Year/SWEN3001/Project/insomniac/app/src/main/res/mipmap-anydpi-v26/ic_launcher_InsomniaApp_round.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/andrew/AndroidStudioProjects/Insomniac/app/src/main/res/font/poppins_medium.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/andrew/AndroidStudioProjects/Insomniac/app/src/main/res/font/poppins_semibold.xml" value="0.20989583333333334" />
         <entry key="..\:/Users/andrew/AndroidStudioProjects/Insomniac/app/src/main/res/layout/activity_main.xml" value="0.10144927536231885" />
