@@ -22,7 +22,6 @@ class SplashScreenActivity : AppCompatActivity() {
         Handler().postDelayed(Runnable { //This method will be executed once the timer is over
             userviewmodel = UserViewModel(application)
             user = userviewmodel.getAllUsers()
-
             if(user.isEmpty()){
                 startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
                 finish()
