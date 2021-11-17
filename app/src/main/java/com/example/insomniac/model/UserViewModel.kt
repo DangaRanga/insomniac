@@ -43,7 +43,7 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
         repo.insertStatsAwake(statsAwake)
     }
 
-    fun getLastStatsAwake():LiveData<List<StatsAwake>> {
+    fun getLastStatsAwake():List<StatsAwake> {
         return repo.getLastStatsAwake()
     }
 
@@ -51,7 +51,7 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
         repo.insertStatsSleep(statsSleep)
     }
 
-    fun getLastStatsSleep():LiveData<List<StatsSleep>> {
+    fun getLastStatsSleep():List<StatsSleep> {
         return repo.getLastStatsSleep()
 
     }
