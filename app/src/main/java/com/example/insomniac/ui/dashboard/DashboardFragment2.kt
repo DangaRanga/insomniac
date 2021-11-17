@@ -14,6 +14,9 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.insomniac.R
 import com.example.insomniac.databinding.FragmentDashboard2Binding
+import com.example.insomniac.model.UserViewModel
+import com.example.insomniac.model.stats.StatsAwake
+import com.example.insomniac.model.stats.StatsSleep
 import java.lang.Exception
 import java.text.SimpleDateFormat
 
@@ -22,6 +25,9 @@ class DashboardFragment2 : Fragment() {
 
     private val binding get() = _binding!!
     private var run = true
+
+    lateinit var sleep: StatsSleep
+    lateinit var userviewmodel: UserViewModel;
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -36,8 +42,18 @@ class DashboardFragment2 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         currentDateTime(view)
         StartTime(view)
+        val sdf = SimpleDateFormat("dd/M/yyyy")
+        val sdf2 = SimpleDateFormat(" hh:mm:ss a")
+        val c = Calendar.getInstance()
+        val currentTime=sdf2.format(c.time).toString()
+        val currentDate=sdf.format(c.time).toString()
+
         view.findViewById<Button>(R.id.stop_sleep).setOnClickListener {
             run=false;
+
+            userviewmodel = UserViewModel(requireActivity().application)
+            sleep= StatsSleep(0,currentDate,currentTime,)
+            userviewmodel.insertStatsSleep(sleep)
             findNavController().navigate(R.id.action_dashboardFragment2_to_navigation_dashboard)
         }
     }
@@ -58,7 +74,7 @@ class DashboardFragment2 : Fragment() {
         }
     }.start()
 
-    private fun StartTime(view: View)= Thread {
+    private fun StartTime(view: View):Unit = Thread {
         var seconds=0
         while (run) {
             try {

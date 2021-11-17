@@ -6,9 +6,8 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "sleep")
 class StatsSleep (
     @PrimaryKey(autoGenerate = true) var id: Int,
-    var StopCurrentDate: Int,
-    var CurrentStopTime: Int,
-    var Timer_Value: Int
+    var StopCurrentDate: String,
+    var CurrentStopTime: String
 )
 
 

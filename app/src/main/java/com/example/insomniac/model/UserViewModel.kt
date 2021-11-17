@@ -1,17 +1,14 @@
 package com.example.insomniac.model
 
 import android.app.Application
-import android.util.Log
+import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.Observer
 import androidx.lifecycle.viewModelScope
 import com.example.insomniac.model.stats.StatsAwake
 import com.example.insomniac.model.stats.StatsSleep
 import com.example.insomniac.model.user.User
-import com.example.insomniac.model.user.UserDao
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 
 class UserViewModel(application: Application):AndroidViewModel(application) {

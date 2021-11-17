@@ -1,22 +1,23 @@
 package com.example.insomniac.ui.dashboard
 
+import android.app.Application
+import android.icu.util.Calendar
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.insomniac.R
 import com.example.insomniac.databinding.FragmentDashboardBinding
 import com.example.insomniac.model.UserViewModel
 import com.example.insomniac.model.stats.StatsAwake
-import com.example.insomniac.model.user.User
-import java.lang.Exception
+import java.text.SimpleDateFormat
+import androidx.lifecycle.ViewModelProvider
+
+
+
 
 
 class DashboardFragment : Fragment() {
@@ -35,11 +36,20 @@ class DashboardFragment : Fragment() {
         return binding.root
 
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 //        StartAwake(view)
+
+        val sdf = SimpleDateFormat("dd/M/yyyy")
+        val sdf2 = SimpleDateFormat(" hh:mm:ss a")
+        val c = Calendar.getInstance()
+        val currentTime=sdf2.format(c.time).toString()
+        val currentDate=sdf.format(c.time).toString()
+
         view.findViewById<Button>(R.id.start_sleep).setOnClickListener {
+            userviewmodel = UserViewModel(requireActivity().application)
+            awake=StatsAwake(0,currentDate,currentTime)
+            userviewmodel.insertAwake(awake)
 //            run=false;
             findNavController().navigate(R.id.action_navigation_dashboard_to_dashboardFragment2)
         }
