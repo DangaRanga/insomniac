@@ -28,15 +28,14 @@
         app:layout_constraintVertical_bias="0.282" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="144dp"
-        android:layout_height="60dp"
+        android:id="@+id/greetUser"
+        android:layout_width="355dp"
+        android:layout_height="61dp"
         android:layout_marginTop="44dp"
         android:text="@string/greetings"
         android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

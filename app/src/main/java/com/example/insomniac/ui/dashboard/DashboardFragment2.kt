@@ -17,6 +17,7 @@ import com.example.insomniac.databinding.FragmentDashboard2Binding
 import com.example.insomniac.model.UserViewModel
 import com.example.insomniac.model.stats.StatsAwake
 import com.example.insomniac.model.stats.StatsSleep
+import com.example.insomniac.model.user.User
 import java.lang.Exception
 import java.text.SimpleDateFormat
 
@@ -28,6 +29,7 @@ class DashboardFragment2 : Fragment() {
 
     lateinit var sleep: StatsSleep
     lateinit var userviewmodel: UserViewModel;
+    lateinit var user: List<User>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,6 +42,14 @@ class DashboardFragment2 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        userviewmodel = UserViewModel(requireActivity().application)
+        user = userviewmodel.getAllUsers()
+        val myuser: User = user.get(0)
+        val name: String = myuser.name
+        val tempUsername: TextView = view.findViewById(R.id.greetUser2)
+        tempUsername.setText("Sleep Well " + name + "!")
+
         currentDateTime(view)
         StartTime(view)
         val sdf = SimpleDateFormat("dd/M/yyyy")
