@@ -12,6 +12,7 @@ class User (
     var feet: Int,
     var inches: Int,
     var weight: Int,
+    var fitness: String,
     var insomnia: Boolean,
     var sleepApnea: Boolean,
     var narcolepsy: Boolean

@@ -9,7 +9,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.example.insomniac.R
 import com.example.insomniac.databinding.FragmentDashboard2Binding
 import java.lang.Exception
@@ -18,11 +20,8 @@ import java.text.SimpleDateFormat
 class DashboardFragment2 : Fragment() {
     private var _binding: FragmentDashboard2Binding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
-    private val run = true //set it to false if you want to stop the timer
-//    private val mHandler = Handler()
+    private var run = true
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,9 +36,12 @@ class DashboardFragment2 : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         currentDateTime(view)
         StartTime(view)
+        view.findViewById<Button>(R.id.stop_sleep).setOnClickListener {
+            run=false;
+            findNavController().navigate(R.id.action_dashboardFragment2_to_navigation_dashboard)
+        }
     }
 
-    //clean up code ...probably change to activity..highlight background on circle
     private fun currentDateTime(view: View)= Thread {
         while (run) {
             try {
@@ -56,7 +58,6 @@ class DashboardFragment2 : Fragment() {
         }
     }.start()
 
-    //clean up code ...probably change to activity..highlight background on circle
     private fun StartTime(view: View)= Thread {
         var seconds=0
         while (run) {
@@ -67,8 +68,8 @@ class DashboardFragment2 : Fragment() {
                     seconds += 1
                     var hours = seconds/3600
                     var minutes=(seconds%3600)/60
-
-                    Log.i("test",hours.toString()+""+minutes.toString()+""+seconds.toString())
+                    var seconds2=(seconds%60)
+                    Log.i("test",hours.toString()+" "+minutes.toString()+" "+seconds.toString()+" "+seconds2.toString())
                     val showCount=view.findViewById<TextView>(R.id.Time_Slp2)
                     showCount.text=(hours.toString()+"h "+minutes.toString()+"m").toString()
                 }
