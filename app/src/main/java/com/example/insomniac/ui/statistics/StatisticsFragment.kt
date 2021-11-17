@@ -137,8 +137,6 @@ class StatisticsFragment : Fragment() {
                 val awakeHours: Int = awakeValUnits[0].toInt()
                 val awakeMinutes: Int = awakeValUnits[1].toInt()
 
-
-
                 // Perform calculation on total time slept
                 val timeSlept = (awakeHours + awakeMinutes) - (sleepHours + sleepMinutes)
                 println(timeSlept)
