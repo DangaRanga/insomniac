@@ -38,6 +38,8 @@ class StatisticsFragment : Fragment() {
         currentDateTime(view)
     }
 
+    private fun calculatePercentages(view: View){
+    }
     private fun currentDateTime(view: View){
         // Initializing key variables
         val monthName = arrayOf(
