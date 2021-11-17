@@ -11,7 +11,7 @@ interface StatsSleepDao {
 
     //Rmbr to select last record
     @Query("SELECT * FROM sleep ")
-    fun getLastSleep(): LiveData<List<StatsSleep>>
+    fun getLastSleep(): List<StatsSleep>
 
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     suspend fun insertSleep(statsSleep: StatsSleep)
