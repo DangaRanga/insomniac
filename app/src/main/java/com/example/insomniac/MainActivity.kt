@@ -7,10 +7,16 @@ import android.view.View
 import android.view.MotionEvent
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.findNavController
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupActionBarWithNavController
+import androidx.navigation.ui.setupWithNavController
+import com.example.insomniac.databinding.ActivityMainBinding
 import com.example.insomniac.ui.startscreens.SignupPage1Activity
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity()  {
-//    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
 
     @SuppressLint("ClickableViewAccessibility")
     private val startTouchListener = View.OnTouchListener { view, motionEvent ->

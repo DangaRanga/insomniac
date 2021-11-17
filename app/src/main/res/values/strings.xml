@@ -11,7 +11,7 @@
     <string name="dashboard_text2">0.0</string>
     <string name="time_label">SLEEP QUALITY</string>
     <string name="time_label2">CURRENT TIME</string>
-    <string name="sleep_awake_text">Time Awake: | Time Asleep: </string>
+    <string name="sleep_awake_text">Time Asleep</string>
     <string name="sleep_awake_text2">Time Awake: | Time Asleep: </string>
     <string name="time_awake">0</string>
     <string name="time_aslp">0</string>
