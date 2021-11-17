@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import com.example.insomniac.R
+import com.example.insomniac.model.UserViewModel
 import java.text.DateFormatSymbols
 
 class StatisticsFragment : Fragment() {
@@ -18,7 +19,7 @@ class StatisticsFragment : Fragment() {
 
     }
 
-    private lateinit var viewModel: StatisticsViewModel
+    lateinit var userviewmodel: UserViewModel;
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -27,15 +28,10 @@ class StatisticsFragment : Fragment() {
         return inflater.inflate(R.layout.statistics_fragment, container, false)
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(StatisticsViewModel::class.java)
-        // TODO: Use the ViewModel
-    }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         currentDateTime(view)
+        // calculatePercentages(view)
     }
 
     /**
@@ -44,8 +40,7 @@ class StatisticsFragment : Fragment() {
      */
     private fun calculatePercentages(view: View){
         // TODO Retrieve these values using the ViewModel to pull from the Room DB
-        // These are currently placeholders so the equation could be written
-        var totalSleepTime = 0
+        // These are currently placeholders so the equation could be write
         var totalRecordingTime = 0
 
         val sleepEfficiency = (totalSleepTime/totalRecordingTime) * 100
@@ -77,5 +72,10 @@ class StatisticsFragment : Fragment() {
         val weekday: String = DateFormatSymbols().shortWeekdays[dayOfWeek]
         val subHeaderTitleView = view.findViewById<TextView>(R.id.statistics_current_day)
         subHeaderTitleView.text = (weekday)
+
+
+        // Update time awake
+        val totalSleepTime = userviewmodel.getLastStatsSleep()
+        val timeAwakeView = view.findViewById<TextView>(R.id.statistics_total_sleep_time)
         }
     }
