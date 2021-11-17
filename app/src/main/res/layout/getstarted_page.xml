@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondaryblue"
-    android:visibility="visible">
+    android:visibility="visible"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait">
 
 
     <ImageView

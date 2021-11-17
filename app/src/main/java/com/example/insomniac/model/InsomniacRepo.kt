@@ -16,4 +16,8 @@ class InsomniacRepo (private val userDao: UserDao){
         return userDao.getUser(uid)
     }
 
+    fun getAllUsers(): LiveData<List<User>> {
+        return userDao.getAllUsers()
+    }
+
 }

@@ -2,12 +2,12 @@ package com.example.insomniac.ui.startscreens
 
 import android.os.Bundle
 import android.annotation.SuppressLint
-import android.widget.Button
 import android.view.View
 import android.view.MotionEvent
 import android.content.Intent
 import android.util.Log
-import android.widget.EditText
+import android.util.TypedValue
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.insomniac.R
 
@@ -60,6 +60,28 @@ class SignupPage2Activity: AppCompatActivity() {
         this.username = intent.getStringExtra("USERNAME").toString()
         this.gender = intent.getStringExtra("GENDER").toString()
         this.age = intent.getIntExtra("AGE", 0);
+
+        val genderItems = arrayOf("Fit", "Unfit")
+        val adapter = ArrayAdapter(
+            this,
+            android.R.layout.simple_spinner_item, genderItems
+        )
+        var tempFitness: Spinner = findViewById<Spinner>(R.id.editFitness);
+        tempFitness.setAdapter(adapter)
+
+        tempFitness.setOnItemSelectedListener(object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                parent: AdapterView<*>, view: View,
+                position: Int, id: Long
+            ) {
+                (view as TextView).setTextColor(resources.getColor(R.color.white))
+                (view as TextView).setTextSize(TypedValue.COMPLEX_UNIT_SP, 20f)
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                // TODO Auto-generated method stub
+            }
+        })
         findViewById<Button>(R.id.nextStep2).setOnTouchListener(startTouchListener)
     }
 
@@ -67,10 +89,10 @@ class SignupPage2Activity: AppCompatActivity() {
         val tempFeet: EditText  = findViewById<EditText>(R.id.editFeet);
         var tempInches:  EditText = findViewById<EditText>(R.id.editInches);
         var tempWeight:  EditText = findViewById<EditText>(R.id.editWeight);
-        var tempFitness:  EditText = findViewById<EditText>(R.id.editFitness);
+        var tempFitness:  Spinner = findViewById<Spinner>(R.id.editFitness);
         this.feet = tempFeet.text.toString().toInt();
         this.inches = tempInches.text.toString().toInt();
         this.weight = tempWeight.text.toString().toInt();
-        this.fitness = tempFitness.text.toString();
+        this.fitness = tempFitness.getSelectedItem().toString();
     }
 }

@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:background="@drawable/appgradient"
     android:visibility="visible"
-    android:id="@+id/splashScreen">
+    android:id="@+id/splashScreen"
+    android:configChanges="orientation"
+    android:screenOrientation="portrait">
 
     <TextView
         android:id="@+id/appName"
