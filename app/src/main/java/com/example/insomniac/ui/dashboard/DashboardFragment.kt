@@ -3,6 +3,7 @@ package com.example.insomniac.ui.dashboard
 import android.app.Application
 import android.icu.util.Calendar
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -18,9 +19,8 @@ import com.example.insomniac.model.stats.StatsAwake
 import java.text.SimpleDateFormat
 import com.example.insomniac.model.user.User
 import androidx.lifecycle.ViewModelProvider
-
-
-
+import com.example.insomniac.model.stats.StatsSleep
+import java.nio.file.Files.size
 
 
 class DashboardFragment : Fragment() {
@@ -31,6 +31,7 @@ class DashboardFragment : Fragment() {
     lateinit var userviewmodel: UserViewModel;
 
     lateinit var user: List<User>
+    lateinit var sleep: List<StatsSleep>
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,11 +53,33 @@ class DashboardFragment : Fragment() {
         val tempUsername: TextView = view.findViewById(R.id.greetUser)
         tempUsername.setText("Hi " + name + "!")
 
+//        val time_awake = userviewmodel.getLastStatsAwake()
+        sleep= userviewmodel.getLastStatsSleep()
+        if (sleep.size ==0){
+            //TODO
+        }else{
+            val aslp: StatsSleep=sleep.get(sleep.size-1)
+            val aslp_val:String = aslp.CurrentStopTime
+            val aslptest: TextView = view.findViewById(R.id.Time_Slp)
+            aslptest.setText(""+ aslp_val+"")
+        }
+
+//        val stopstime: String = aslp.CurrentStopTime
+
+//        Log.i("Testing",stopstime)
+
+//        val myuser: User = user.get(0)
+//        val name: String = myuser.name
+//        val tempUsername: TextView = view.findViewById(R.id.greetUser)
+//        tempUsername.setText("Hi " + name + "!")
+
+
         val sdf = SimpleDateFormat("dd/M/yyyy")
         val sdf2 = SimpleDateFormat(" hh:mm:ss a")
         val c = Calendar.getInstance()
         val currentTime=sdf2.format(c.time).toString()
         val currentDate=sdf.format(c.time).toString()
+
 
         view.findViewById<Button>(R.id.start_sleep).setOnClickListener {
             userviewmodel = UserViewModel(requireActivity().application)
