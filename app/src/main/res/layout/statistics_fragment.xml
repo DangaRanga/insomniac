@@ -94,14 +94,14 @@
                         android:text="Total Sleep Time"
                         android:textColor="@android:color/darker_gray"
                         android:textSize="20sp"
-                        app:layout_constraintBottom_toTopOf="@+id/textView19"
+                        app:layout_constraintBottom_toTopOf="@+id/statistics_deep_sleep"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintHorizontal_bias="0.08"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toBottomOf="@+id/statistics_current_day" />
 
                     <TextView
-                        android:id="@+id/textView19"
+                        android:id="@+id/statistics_deep_sleep"
                         android:layout_width="wrap_content"
                         android:layout_height="27dp"
                         android:layout_marginTop="12dp"
