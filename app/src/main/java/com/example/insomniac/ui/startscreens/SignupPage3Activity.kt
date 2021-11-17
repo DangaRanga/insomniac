@@ -41,9 +41,9 @@ class SignupPage3Activity: AppCompatActivity() {
                 startActivity(intent);
             }
             MotionEvent.ACTION_UP -> {
-              //  user = User(0, this.username, this.gender, this.age, this.feet, this.inches, this.weight,
+              //                user = User(1, this.username, this.gender, this.age, this.feet, this.inches, this.weight,
 //                    this.fitness, this.insomnia, this.sleepApnea, this.narcolepsy)
-              //  userviewmodel.insert(user);
+//                userviewmodel.insert(user);
                 val intent = Intent(this, DashboardStartActivity::class.java).apply {}
                 startActivity(intent);
             }
