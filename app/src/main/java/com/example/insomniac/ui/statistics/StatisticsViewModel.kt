@@ -18,8 +18,8 @@ class StatisticsViewModel(application: Application): AndroidViewModel(applicatio
         val userDao = db.userDao()
         val statsAwakeDao=db.statsAwakeDao()
         val statsSleepDao=db.statsSleepDao()
-
-        repo = InsomniacRepo(userDao,statsAwakeDao, statsSleepDao)
+        val tipsDao=db.TipsDao()
+        repo = InsomniacRepo(userDao,statsAwakeDao, statsSleepDao,tipsDao)
         user = repo.getUser(0)
     }
 

@@ -21,9 +21,10 @@ class UserViewModel(application: Application):AndroidViewModel(application) {
         val userDao = db.userDao()
         val statsAwakeDao=db.statsAwakeDao()
         val statsSleepDao=db.statsSleepDao()
+        val tipsDao=db.TipsDao()
 
 
-        repo = InsomniacRepo(userDao,statsAwakeDao, statsSleepDao)
+        repo = InsomniacRepo(userDao,statsAwakeDao, statsSleepDao,tipsDao)
         user = repo.getUser(0)
 
     }
